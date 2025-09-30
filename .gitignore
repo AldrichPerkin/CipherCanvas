@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# env files
+.env
+.env.local
+.env.*
+!.env.example
+
+# build outputs
+frontend/.next/
+frontend/out/
+contracts/artifacts/
+contracts/cache/
