@@ -28,8 +28,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: action/frontend/package-lock.json
+          # 关闭缓存以避免路径未解析导致的报错
 
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
